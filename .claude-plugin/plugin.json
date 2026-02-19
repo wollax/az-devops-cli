@@ -1,0 +1,8 @@
+{
+  "name": "az-devops-cli",
+  "description": "Manage Azure DevOps pull requests from the command line",
+  "version": "0.1.0",
+  "author": {
+    "name": "wollax"
+  }
+}
