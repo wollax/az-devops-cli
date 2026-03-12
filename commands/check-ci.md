@@ -7,7 +7,6 @@ argument-hint: "[--list] [--logs] [--full] [--pipeline <name-or-id>] [--branch <
 ## Context
 
 - Current branch: !`git branch --show-current`
-- Repository name: !`basename $(git rev-parse --show-toplevel)`
 
 ## Your task
 
@@ -15,8 +14,11 @@ Check Azure DevOps CI pipeline run status. By default, show the most recent run 
 
 ### Step 1: Determine parameters
 
+First, get the repository name by running `basename $(git rev-parse --show-toplevel)`.
+
 Resolve these from user arguments or defaults:
 
+- **Repository name:** from the command above
 - **Branch:** user-provided `--branch` value, or current branch (from context above)
 - **Pipeline:** user-provided `--pipeline <name-or-id>`, or auto-detect (see step 2)
 - **Mode:** one of:
