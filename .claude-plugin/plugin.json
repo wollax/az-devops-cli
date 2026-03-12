@@ -1,7 +1,7 @@
 {
   "name": "az-devops-cli",
   "description": "Manage Azure DevOps pull requests and CI pipelines from the command line",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "wollax",
     "email": "198976693+wollax@users.noreply.github.com"
