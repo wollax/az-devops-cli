@@ -1,6 +1,6 @@
 # az-devops-cli
 
-Claude Code plugin for managing Azure DevOps pull requests via the `az repos pr` CLI.
+Claude Code plugin for managing Azure DevOps pull requests and CI pipelines via the `az` CLI.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ claude plugin add ~/Git/personal/az-devops-cli
 | `/az-devops-cli:create-pr` | Create a pull request for the current branch |
 | `/az-devops-cli:update-pr` | Update an existing PR (title, description, reviewers, etc.) |
 | `/az-devops-cli:complete-pr` | Complete/merge a PR (squash + auto-complete by default) |
+| `/az-devops-cli:check-ci` | Check CI pipeline run status for the current branch |
 
 ### `/az-devops-cli:create-pr`
 
@@ -35,3 +36,14 @@ Updates an existing PR auto-detected from the current branch. Supports changing 
 ### `/az-devops-cli:complete-pr`
 
 Sets auto-complete with squash merge by default. Use `--now` to complete immediately, `--merge` for merge commit instead of squash.
+
+### `/az-devops-cli:check-ci`
+
+Checks CI pipeline run status for the current branch. Auto-detects the pipeline from the repository, or accepts `--pipeline <name-or-id>`.
+
+Optional args:
+- `--list` — show last 5 runs instead of just the most recent
+- `--logs` — include failed stage/job names and log output
+- `--full` — complete timeline, artifacts, triggered-by info
+- `--pipeline <name-or-id>` — specify pipeline (auto-detected if omitted)
+- `--branch <branch>` — override branch (defaults to current branch)
