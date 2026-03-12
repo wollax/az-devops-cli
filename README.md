@@ -6,7 +6,7 @@ Claude Code plugin for managing Azure DevOps pull requests and CI pipelines via 
 
 - [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) with the `azure-devops` extension
 - `AZURE_DEVOPS_EXT_PAT` environment variable set for authentication
-- Repos cloned under `~/Git/NDIT/`
+- A git repository with an Azure DevOps remote
 
 ## Installation
 
