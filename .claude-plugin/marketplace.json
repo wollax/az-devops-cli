@@ -1,7 +1,8 @@
 {
   "name": "az-devops-cli",
   "owner": {
-    "name": "wollax"
+    "name": "wollax",
+    "email": "198976693+wollax@users.noreply.github.com"
   },
   "description": "Manage Azure DevOps pull requests and CI pipelines from the command line",
   "version": "0.2.0",
@@ -11,7 +12,8 @@
       "description": "Manage Azure DevOps pull requests and CI pipelines from the command line",
       "version": "0.2.0",
       "author": {
-        "name": "wollax"
+        "name": "wollax",
+        "email": "198976693+wollax@users.noreply.github.com"
       },
       "source": "./"
     }
